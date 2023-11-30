@@ -1,0 +1,19 @@
+CREATE TABLE `tb_buku` (
+ `id_buku` int(11) NOT NULL,
+ `judul` varchar(255) NOT NULL,
+ `stok` int(11) NOT NULL,
+ `kategori` varchar(255) NOT NULL,
+ `penulis` varchar(255) NOT NULL,
+ `harga` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+INSERT INTO `tb_buku` (`id_buku`, `judul`, `stok`, `kategori`, `penulis`, `harga`) VALUES
+(1, 'Pergi', 10, 'Novel', 'Tere Liye', 89000),
+(2, 'Kosmos', 8,'Sains', 'Carl Sagan', 100000),
+(3, 'The Promised Neverland 7', 20, 'Komik', 'Kaiu Shirai',28000),
+(4, 'Sebuah Seni untuk Bersikap Bodo Amat', 15, 'Pengembangan Diri', 'Mark Manson', 67000),
+(5, 'Daniel Gerhard Brown', 6, 'Novel', 'Daniel Gerhard Brown',169000);
+ALTER TABLE `tb_buku`
+ ADD PRIMARY KEY (`id_buku`);
+ALTER TABLE `tb_buku`
+ MODIFY `id_buku` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+;
